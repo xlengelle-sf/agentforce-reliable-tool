@@ -1,6 +1,6 @@
 {
   "name": "agentforce-reliable-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reliable MCP-compliant AgentForce API client tool for Claude",
   "main": "src/client.js",
   "type": "module",
