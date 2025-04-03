@@ -1,0 +1,48 @@
+{
+  "name": "agentforce-reliable-tool",
+  "version": "1.0.0",
+  "description": "Reliable MCP-compliant AgentForce API client tool for Claude",
+  "main": "src/client.js",
+  "type": "module",
+  "bin": {
+    "agentforce-reliable-tool": "./src/client.js"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "start": "node src/client.js",
+    "prepare": "npm run build",
+    "postinstall": "node ./scripts/postinstall.js",
+    "configure": "node src/client.js configure"
+  },
+  "keywords": [
+    "agentforce",
+    "salesforce",
+    "mcp",
+    "claude",
+    "anthropic",
+    "ai",
+    "api",
+    "client",
+    "model-context-protocol"
+  ],
+  "author": "Claude User",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "inquirer": "^9.2.12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlengelle-sf/agentforce-reliable-tool.git"
+  }
+}
